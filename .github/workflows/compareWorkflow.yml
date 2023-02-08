@@ -1,7 +1,7 @@
 name: Run Comparison Script
 on:
   pull_request_target:
-    branches: [ "master" ]
+    branches: [ "main" ]
     types: [opened]
   
 jobs:     
@@ -13,5 +13,5 @@ jobs:
         env:
           SCRIPTING_LICENSE_KEY: ${{secrets.SCRIPTING_LICENSE_KEY}}
         with:
-          firstBranch: master
+          firstBranch: main
           secondBranch: ${{ github.event.pull_request.head.sha }}
