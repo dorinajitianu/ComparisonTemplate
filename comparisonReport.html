@@ -29,7 +29,6 @@
       tr.quantOutgoing {color:#333}
       tr.quantIncoming {color:#3591da}
       tr.quantModifications {color:#870000}
-      tr.quantConflicts {color:#ff1919}
 
       td.filePath {word-break:break-all}
       td.size {width:70px}
@@ -71,22 +70,15 @@
         color:#870000
       }
       td.modifiedModifications {color:#870000}
-      td.sizeConflicts {
-        text-align:right;
-        color:#ff1919
-      }
-      td.modifiedConflicts {color:#ff1919}
 
       span.outgoing {color:#333}
       span.incoming {color:#3591da}
       span.modifications {color:#870000}
-      span.conflicts {color:#ff1919}
 
       a {text-decoration:none}
       a.outgoing {color:#333}
       a.incoming {color:#3591da}
       a.modifications {color:#870000}
-      a.conflicts {color:#ff1919}
 
       .dirPath {
         background-color:#fafaef;
@@ -130,15 +122,10 @@
         background-color:rgba(135,0,0,.65);
         color:rgba(135,0,0,0)
       }
-      .conflictsLbl {
-        background-color:#ff1919;
-        color:#ff1919
-      }
 
       #outgoing.tableFilter:checked ~ table.details tr.detailsOutgoing,
       #incoming.tableFilter:checked ~ table.details tr.detailsIncoming,
       #modifications.tableFilter:checked ~ table.details tr.detailsModifications,
-      #conflicts.tableFilter:checked ~ table.details tr.detailsConflicts,
       #all.tableFilter:checked ~ table.details tr {
         display:table-row
       }
@@ -146,30 +133,24 @@
   </head>
 
   <body>
-    <label style="display:block; margin-bottom:10px"><b>Differences:&nbsp;11</b></label>
+    <label style="display:block; margin-bottom:10px"><b>Differences:&nbsp;2</b></label>
 
     <label style="margin-right:20px"><b><br/>Comparison details:</b></label>
     <input type="radio" class="tableFilter" name="filter" id="all" checked/>
     <label class="allLbl filterLbl" for="all" title="all differences" style="display:none">&nbsp;&#10003;&nbsp;</label>
-    <span>11 of type 'incoming'</span>
+    <span>2 of type 'modified'</span>
 
     <table style="margin-top:.6em">
-      <tr class="dirPath" style="border-bottom:hidden">
-        <td class="filePath"><a class="outgoing" href="file:/home/runner/work/ComparisonTemplate/ComparisonTemplate/base/" target="_blank">Base folder: /home/runner/work/ComparisonTemplate/ComparisonTemplate/base/</a></td>
-      </tr>
-    </table>
-
-    <table>
       <tr class="dirPath" style="border-bottom:hidden">
         <td class="filePath"><a class="outgoing" href="file:/home/runner/work/ComparisonTemplate/ComparisonTemplate/main/" target="_blank">Folder 1: /home/runner/work/ComparisonTemplate/ComparisonTemplate/main/</a></td>
         <td class="detailsStatus" style="border-left:hidden"></td>
         <td class="detailsStatus" style="border-left:hidden; border-right:hidden"></td>
-        <td class="filePath"><a class="outgoing" href="file:/home/runner/work/ComparisonTemplate/ComparisonTemplate/test-branch/" target="_blank">Folder 2: /home/runner/work/ComparisonTemplate/ComparisonTemplate/test-branch/</a></td>
+        <td class="filePath"><a class="outgoing" href="file:/home/runner/work/ComparisonTemplate/ComparisonTemplate/b1fc329a7fee11d999094d8505ba84e1d9104874/" target="_blank">Folder 2: /home/runner/work/ComparisonTemplate/ComparisonTemplate/b1fc329a7fee11d999094d8505ba84e1d9104874/</a></td>
       </tr>
     </table>
 
     <table class="details">
-      <tr class="dirPath detailsOutgoing detailsIncoming detailsModifications detailsConflicts" style="font-size:1.1em; color:#333">
+      <tr class="dirPath detailsOutgoing detailsIncoming detailsModifications" style="font-size:1.1em; color:#333">
         <td class="filePath">File name</td>
         <td class="size">Size</td>
         <td class="modifDate">Modified</td>
@@ -179,115 +160,25 @@
         <td class="size">Size</td>
         <td class="modifDate">Modified</td>
       </tr>
-      <tr class="detailsIncoming">
-        <td class="filePath"><a class="incoming" href="file:/home/runner/work/ComparisonTemplate/ComparisonTemplate/main/build/build.gradle" target="_blank">build/build.gradle</a></td>
-        <td class="sizeIncoming">2774</td>
-        <td class="modifiedIncoming">2023-02-07  14:08:02</td>
-        <td class="detailsStatusWithLink" title="modified in folder 2&nbsp;&nbsp; CLICK FOR DETAILS!"><a href="comparisonReport-OXY-FC-REPORTS/fc-3.html" target="_blank"><span class="incoming">&nbsp;&nbsp;&nbsp;&nbsp;</span></a></td>
-        <td class="detailsStatusWithLink" title="modified in folder 2&nbsp;&nbsp; CLICK FOR DETAILS!"><a href="comparisonReport-OXY-FC-REPORTS/fc-3.html" target="_blank"><span class="incoming">&nbsp;&#8727;&nbsp;</span></a></td>
-        <td class="filePath"><a class="incoming" href="file:/home/runner/work/ComparisonTemplate/ComparisonTemplate/test-branch/build/build.gradle" target="_blank">build/build.gradle</a></td>
-        <td class="sizeIncoming">2736</td>
-        <td class="modifiedIncoming">2023-02-07  14:08:03</td>
+      <tr class="detailsModifications">
+        <td class="filePath"><a class="modifications" href="file:/home/runner/work/ComparisonTemplate/ComparisonTemplate/main/.github/workflows/compareWorkflow.yml" target="_blank">.github/workflows/compareWorkflow.yml</a></td>
+        <td class="sizeModifications">447</td>
+        <td class="modifiedModifications">2023-02-08  10:25:54</td>
+        <td class="detailsStatusWithLink" title="modified&nbsp;&nbsp; CLICK FOR DETAILS!"><a href="comparisonReport-OXY-FC-REPORTS/fc-0.html" target="_blank"><span class="modifications">&nbsp;&#8727;&nbsp;</span></a></td>
+        <td class="detailsStatusWithLink" title="modified&nbsp;&nbsp; CLICK FOR DETAILS!"><a href="comparisonReport-OXY-FC-REPORTS/fc-0.html" target="_blank"><span class="modifications">&nbsp;&#8727;&nbsp;</span></a></td>
+        <td class="filePath"><a class="modifications" href="file:/home/runner/work/ComparisonTemplate/ComparisonTemplate/b1fc329a7fee11d999094d8505ba84e1d9104874/.github/workflows/compareWorkflow.yml" target="_blank">.github/workflows/compareWorkflow.yml</a></td>
+        <td class="sizeModifications">451</td>
+        <td class="modifiedModifications">2023-02-08  10:25:54</td>
       </tr>
-      <tr class="detailsIncoming">
-        <td class="filePath"><a class="incoming" href="file:/home/runner/work/ComparisonTemplate/ComparisonTemplate/main/build/gradle.properties" target="_blank">build/gradle.properties</a></td>
-        <td class="sizeIncoming">215</td>
-        <td class="modifiedIncoming">2023-02-07  14:08:02</td>
-        <td class="detailsStatusWithLink" title="modified in folder 2&nbsp;&nbsp; CLICK FOR DETAILS!"><a href="comparisonReport-OXY-FC-REPORTS/fc-4.html" target="_blank"><span class="incoming">&nbsp;&nbsp;&nbsp;&nbsp;</span></a></td>
-        <td class="detailsStatusWithLink" title="modified in folder 2&nbsp;&nbsp; CLICK FOR DETAILS!"><a href="comparisonReport-OXY-FC-REPORTS/fc-4.html" target="_blank"><span class="incoming">&nbsp;&#8727;&nbsp;</span></a></td>
-        <td class="filePath"><a class="incoming" href="file:/home/runner/work/ComparisonTemplate/ComparisonTemplate/test-branch/build/gradle.properties" target="_blank">build/gradle.properties</a></td>
-        <td class="sizeIncoming">211</td>
-        <td class="modifiedIncoming">2023-02-07  14:08:03</td>
-      </tr>
-      <tr class="detailsIncoming">
-        <td class="filePath"><a class="incoming" href="file:/home/runner/work/ComparisonTemplate/ComparisonTemplate/main/project/dita/concepts/bookmap-readme.dita" target="_blank">project/dita/concepts/bookmap-readme.dita</a></td>
-        <td class="sizeIncoming">1862</td>
-        <td class="modifiedIncoming">2023-02-07  14:08:02</td>
-        <td class="detailsStatusWithLink" title="modified in folder 2&nbsp;&nbsp; CLICK FOR DETAILS!"><a href="comparisonReport-OXY-FC-REPORTS/fc-8.html" target="_blank"><span class="incoming">&nbsp;&nbsp;&nbsp;&nbsp;</span></a></td>
-        <td class="detailsStatusWithLink" title="modified in folder 2&nbsp;&nbsp; CLICK FOR DETAILS!"><a href="comparisonReport-OXY-FC-REPORTS/fc-8.html" target="_blank"><span class="incoming">&nbsp;&#8727;&nbsp;</span></a></td>
-        <td class="filePath"><a class="incoming" href="file:/home/runner/work/ComparisonTemplate/ComparisonTemplate/test-branch/project/dita/concepts/bookmap-readme.dita" target="_blank">project/dita/concepts/bookmap-readme.dita</a></td>
-        <td class="sizeIncoming">2041</td>
-        <td class="modifiedIncoming">2023-02-07  14:08:03</td>
-      </tr>
-      <tr class="detailsIncoming">
-        <td class="filePath"><a class="incoming" href="file:/home/runner/work/ComparisonTemplate/ComparisonTemplate/main/project/dita/concepts/notices.dita" target="_blank">project/dita/concepts/notices.dita</a></td>
-        <td class="sizeIncoming">2220</td>
-        <td class="modifiedIncoming">2023-02-07  14:08:02</td>
-        <td class="detailsStatusWithLink" title="modified in folder 2&nbsp;&nbsp; CLICK FOR DETAILS!"><a href="comparisonReport-OXY-FC-REPORTS/fc-9.html" target="_blank"><span class="incoming">&nbsp;&nbsp;&nbsp;&nbsp;</span></a></td>
-        <td class="detailsStatusWithLink" title="modified in folder 2&nbsp;&nbsp; CLICK FOR DETAILS!"><a href="comparisonReport-OXY-FC-REPORTS/fc-9.html" target="_blank"><span class="incoming">&nbsp;&#8727;&nbsp;</span></a></td>
-        <td class="filePath"><a class="incoming" href="file:/home/runner/work/ComparisonTemplate/ComparisonTemplate/test-branch/project/dita/concepts/notices.dita" target="_blank">project/dita/concepts/notices.dita</a></td>
-        <td class="sizeIncoming">2061</td>
-        <td class="modifiedIncoming">2023-02-07  14:08:03</td>
-      </tr>
-      <tr class="detailsIncoming">
-        <td class="filePath"><a class="incoming" href="file:/home/runner/work/ComparisonTemplate/ComparisonTemplate/main/project/dita/tasks/unscrewcover.dita" target="_blank">project/dita/tasks/unscrewcover.dita</a></td>
-        <td class="sizeIncoming">1053</td>
-        <td class="modifiedIncoming">2023-02-07  14:08:02</td>
-        <td class="detailsStatus" title="deleted from folder 2"><span class="incoming">&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
-        <td class="detailsStatus" title="deleted from folder 2"><span class="incoming">&nbsp;&#8722;&nbsp;</span></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr class="detailsIncoming">
-        <td class="filePath"><a class="incoming" href="file:/home/runner/work/ComparisonTemplate/ComparisonTemplate/main/project/dita/topics/task_appendix.dita" target="_blank">project/dita/topics/task_appendix.dita</a></td>
-        <td class="sizeIncoming">607</td>
-        <td class="modifiedIncoming">2023-02-07  14:08:02</td>
-        <td class="detailsStatusWithLink" title="modified in folder 2&nbsp;&nbsp; CLICK FOR DETAILS!"><a href="comparisonReport-OXY-FC-REPORTS/fc-33.html" target="_blank"><span class="incoming">&nbsp;&nbsp;&nbsp;&nbsp;</span></a></td>
-        <td class="detailsStatusWithLink" title="modified in folder 2&nbsp;&nbsp; CLICK FOR DETAILS!"><a href="comparisonReport-OXY-FC-REPORTS/fc-33.html" target="_blank"><span class="incoming">&nbsp;&#8727;&nbsp;</span></a></td>
-        <td class="filePath"><a class="incoming" href="file:/home/runner/work/ComparisonTemplate/ComparisonTemplate/test-branch/project/dita/topics/task_appendix.dita" target="_blank">project/dita/topics/task_appendix.dita</a></td>
-        <td class="sizeIncoming">606</td>
-        <td class="modifiedIncoming">2023-02-07  14:08:03</td>
-      </tr>
-      <tr class="detailsIncoming">
-        <td class="filePath"><a class="incoming" href="file:/home/runner/work/ComparisonTemplate/ComparisonTemplate/main/project/dita/topics/task_preface.dita" target="_blank">project/dita/topics/task_preface.dita</a></td>
-        <td class="sizeIncoming">722</td>
-        <td class="modifiedIncoming">2023-02-07  14:08:02</td>
-        <td class="detailsStatusWithLink" title="modified in folder 2&nbsp;&nbsp; CLICK FOR DETAILS!"><a href="comparisonReport-OXY-FC-REPORTS/fc-34.html" target="_blank"><span class="incoming">&nbsp;&nbsp;&nbsp;&nbsp;</span></a></td>
-        <td class="detailsStatusWithLink" title="modified in folder 2&nbsp;&nbsp; CLICK FOR DETAILS!"><a href="comparisonReport-OXY-FC-REPORTS/fc-34.html" target="_blank"><span class="incoming">&nbsp;&#8727;&nbsp;</span></a></td>
-        <td class="filePath"><a class="incoming" href="file:/home/runner/work/ComparisonTemplate/ComparisonTemplate/test-branch/project/dita/topics/task_preface.dita" target="_blank">project/dita/topics/task_preface.dita</a></td>
-        <td class="sizeIncoming">696</td>
-        <td class="modifiedIncoming">2023-02-07  14:08:03</td>
-      </tr>
-      <tr class="detailsIncoming">
-        <td class="filePath"><a class="incoming" href="file:/home/runner/work/ComparisonTemplate/ComparisonTemplate/main/project/dita/taskbook.ditamap" target="_blank">project/dita/taskbook.ditamap</a></td>
-        <td class="sizeIncoming">3731</td>
-        <td class="modifiedIncoming">2023-02-07  14:08:02</td>
-        <td class="detailsStatusWithLink" title="modified in folder 2&nbsp;&nbsp; CLICK FOR DETAILS!"><a href="comparisonReport-OXY-FC-REPORTS/fc-36.html" target="_blank"><span class="incoming">&nbsp;&nbsp;&nbsp;&nbsp;</span></a></td>
-        <td class="detailsStatusWithLink" title="modified in folder 2&nbsp;&nbsp; CLICK FOR DETAILS!"><a href="comparisonReport-OXY-FC-REPORTS/fc-36.html" target="_blank"><span class="incoming">&nbsp;&#8727;&nbsp;</span></a></td>
-        <td class="filePath"><a class="incoming" href="file:/home/runner/work/ComparisonTemplate/ComparisonTemplate/test-branch/project/dita/taskbook.ditamap" target="_blank">project/dita/taskbook.ditamap</a></td>
-        <td class="sizeIncoming">3677</td>
-        <td class="modifiedIncoming">2023-02-07  14:08:03</td>
-      </tr>
-      <tr class="detailsIncoming">
-        <td class="filePath"><a class="incoming" href="file:/home/runner/work/ComparisonTemplate/ComparisonTemplate/main/project/dita/test.dita" target="_blank">project/dita/test.dita</a></td>
-        <td class="sizeIncoming">221</td>
-        <td class="modifiedIncoming">2023-02-07  14:08:02</td>
-        <td class="detailsStatus" title="deleted from folder 2"><span class="incoming">&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
-        <td class="detailsStatus" title="deleted from folder 2"><span class="incoming">&nbsp;&#8722;&nbsp;</span></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr class="detailsIncoming">
-        <td class="filePath"><a class="incoming" href="file:/home/runner/work/ComparisonTemplate/ComparisonTemplate/main/project/dita/test2.dita" target="_blank">project/dita/test2.dita</a></td>
-        <td class="sizeIncoming">213</td>
-        <td class="modifiedIncoming">2023-02-07  14:08:02</td>
-        <td class="detailsStatus" title="deleted from folder 2"><span class="incoming">&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
-        <td class="detailsStatus" title="deleted from folder 2"><span class="incoming">&nbsp;&#8722;&nbsp;</span></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr class="detailsIncoming">
-        <td class="filePath"><a class="incoming" href="file:/home/runner/work/ComparisonTemplate/ComparisonTemplate/main/README.md" target="_blank">README.md</a></td>
-        <td class="sizeIncoming">2670</td>
-        <td class="modifiedIncoming">2023-02-07  14:08:02</td>
-        <td class="detailsStatusWithLink" title="modified in folder 2&nbsp;&nbsp; CLICK FOR DETAILS!"><a href="comparisonReport-OXY-FC-REPORTS/fc-43.html" target="_blank"><span class="incoming">&nbsp;&nbsp;&nbsp;&nbsp;</span></a></td>
-        <td class="detailsStatusWithLink" title="modified in folder 2&nbsp;&nbsp; CLICK FOR DETAILS!"><a href="comparisonReport-OXY-FC-REPORTS/fc-43.html" target="_blank"><span class="incoming">&nbsp;&#8727;&nbsp;</span></a></td>
-        <td class="filePath"><a class="incoming" href="file:/home/runner/work/ComparisonTemplate/ComparisonTemplate/test-branch/README.md" target="_blank">README.md</a></td>
-        <td class="sizeIncoming">2442</td>
-        <td class="modifiedIncoming">2023-02-07  14:08:03</td>
+      <tr class="detailsModifications">
+        <td class="filePath"><a class="modifications" href="file:/home/runner/work/ComparisonTemplate/ComparisonTemplate/main/project/dita/concepts/notices.dita" target="_blank">project/dita/concepts/notices.dita</a></td>
+        <td class="sizeModifications">2220</td>
+        <td class="modifiedModifications">2023-02-08  10:25:54</td>
+        <td class="detailsStatusWithLink" title="modified&nbsp;&nbsp; CLICK FOR DETAILS!"><a href="comparisonReport-OXY-FC-REPORTS/fc-1.html" target="_blank"><span class="modifications">&nbsp;&#8727;&nbsp;</span></a></td>
+        <td class="detailsStatusWithLink" title="modified&nbsp;&nbsp; CLICK FOR DETAILS!"><a href="comparisonReport-OXY-FC-REPORTS/fc-1.html" target="_blank"><span class="modifications">&nbsp;&#8727;&nbsp;</span></a></td>
+        <td class="filePath"><a class="modifications" href="file:/home/runner/work/ComparisonTemplate/ComparisonTemplate/b1fc329a7fee11d999094d8505ba84e1d9104874/project/dita/concepts/notices.dita" target="_blank">project/dita/concepts/notices.dita</a></td>
+        <td class="sizeModifications">2224</td>
+        <td class="modifiedModifications">2023-02-08  10:25:54</td>
       </tr>
     </table>
   </body>

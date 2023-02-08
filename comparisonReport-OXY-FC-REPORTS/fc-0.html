@@ -91,14 +91,14 @@
       span.modifiedLevel2 {background-color:#ffd1d1}
 
       label.lineNoLeft {
-        width:9px;
+        width:18px;
         padding-right:5px;
         float:left;
         color:#a5a5a5;
         text-align:right;
       }
       label.lineNoRight {
-        width:9px;
+        width:18px;
         padding-left:0px;
         padding-right:0px;
         float:right;
@@ -118,39 +118,47 @@
   </head>
 
   <body>
-    <label style="display:block; margin-bottom:10px"><b>Differences: 1 difference block, 1 difference in total</b></label>
+    <label style="display:block; margin-bottom:10px"><b>Differences: 2 difference blocks, 2 differences in total</b></label>
 
     <label style="margin-right:20px"><b><br/>Comparison details by difference blocks:</b></label>
     <input type="radio" class="tableFilter" name="filter" id="all" checked/>
-    <label>1 of type 'incoming'</label>
+    <label>2 of type 'modified'</label>
 
     <table style="margin-top:.6em">
       <tr class="file">
-        <td class="filePath"><a href="file:/home/runner/work/ComparisonTemplate/ComparisonTemplate/base/build/gradle.properties" target="_blank">Base file: /home/runner/work/ComparisonTemplate/ComparisonTemplate/base/build/gradle.properties</a></td>
-      </tr>
-    </table>
-
-    <table>
-      <tr class="file">
-        <td class="filePath"><a href="file:/home/runner/work/ComparisonTemplate/ComparisonTemplate/main/build/gradle.properties" target="_blank">File 1: /home/runner/work/ComparisonTemplate/ComparisonTemplate/main/build/gradle.properties</a></td>
+        <td class="filePath"><a href="file:/home/runner/work/ComparisonTemplate/ComparisonTemplate/main/.github/workflows/compareWorkflow.yml" target="_blank">File 1: /home/runner/work/ComparisonTemplate/ComparisonTemplate/main/.github/workflows/compareWorkflow.yml</a></td>
         <td class="detailsStatus" style="border-left:hidden"></td>
         <td class="detailsStatus" style="border-left:hidden; border-right:hidden"></td>
-        <td class="filePath"><a href="file:/home/runner/work/ComparisonTemplate/ComparisonTemplate/test-branch/build/gradle.properties" target="_blank">File 2: /home/runner/work/ComparisonTemplate/ComparisonTemplate/test-branch/build/gradle.properties</a></td>
+        <td class="filePath"><a href="file:/home/runner/work/ComparisonTemplate/ComparisonTemplate/b1fc329a7fee11d999094d8505ba84e1d9104874/.github/workflows/compareWorkflow.yml" target="_blank">File 2: /home/runner/work/ComparisonTemplate/ComparisonTemplate/b1fc329a7fee11d999094d8505ba84e1d9104874/.github/workflows/compareWorkflow.yml</a></td>
       </tr>
     </table>
 
     <table class="details">
-      <tr class="detailsIncoming">
+      <tr class="detailsModified">
         <td class="details content">
           <div>
-            <label class="lineNoLeft">3</label><span class="incoming">repoMainBranchUrl&nbsp;=&nbsp;https://github.com/<span class="incomingLevel2">dorinajitianu</span>/oxygen-script-comparison-template/blob/main</span>
+            <label class="lineNoLeft">4</label><span class="modified">&nbsp;&nbsp;&nbsp;&nbsp;branches:&nbsp;[&nbsp;<span class="modifiedLevel2">"main"</span>&nbsp;]</span>
           </div>
         </td>
-        <td class="details detailsStatus" title="added to 2nd file">&#8722;</td>
-        <td class="details detailsStatus" title="added to 2nd file">+</td>
+        <td class="details detailsStatus" title="modified">&#8727;</td>
+        <td class="details detailsStatus" title="modified">&#8727;</td>
         <td class="details content">
           <div>
-            <label class="lineNoRight">3</label><span class="incoming">repoMainBranchUrl&nbsp;=&nbsp;https://github.com/<span class="incomingLevel2">oxygenxml</span>/oxygen-script-comparison-template/blob/main</span>
+            <label class="lineNoRight">4</label><span class="modified">&nbsp;&nbsp;&nbsp;&nbsp;branches:&nbsp;[&nbsp;<span class="modifiedLevel2">"master"</span>&nbsp;]</span>
+          </div>
+        </td>
+      </tr>
+      <tr class="detailsModified">
+        <td class="details content">
+          <div>
+            <label class="lineNoLeft">16</label><span class="modified">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;firstBranch:&nbsp;<span class="modifiedLevel2">main</span></span>
+          </div>
+        </td>
+        <td class="details detailsStatus" title="modified">&#8727;</td>
+        <td class="details detailsStatus" title="modified">&#8727;</td>
+        <td class="details content">
+          <div>
+            <label class="lineNoRight">16</label><span class="modified">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;firstBranch:&nbsp;<span class="modifiedLevel2">master</span></span>
           </div>
         </td>
       </tr>
